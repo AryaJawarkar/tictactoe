@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+}
+nav{
+    height: 100px;
+    width: 100%;
+    background-color: #1b1b1b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li{
+list-style-type: none;
+font-size: 3rem;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+color: aliceblue;
+}
+
+.game-container{
+background-color: #ffffff;
+display: flex;
+/* align-items: center; */
+justify-content: center;
+margin-top: 50px;
+flex-wrap: wrap;
+position: relative;
+}
+
+.container{
+display: grid;
+grid-template-columns: repeat(3,10vw) ;
+grid-template-rows: repeat(3,10vw);
+position: relative;
+}
+
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box:hover{
+    background-color: rgb(246, 237, 255);
+    cursor: pointer;
+}
+
+.game-info{
+     margin-top: 20px;
+   margin-left: 100px;
+}
+h1{
+    font-size: 3rem;
+    color: #575757;
+}
+.imgbox img{
+    transition: width 2s ease-in-out;
+    width: 0;
+    /* visibility: hidden; */
+    margin-top: 20px;
+    height: 300px;
+}
+
+.br{
+    border-right: 0;
+}
+.bl{
+    border-left: 0;
+}
+.bt{
+    border-top: 0;
+}
+.bd{
+    border-bottom: 0;
+}
+
+#reset{
+    padding: 15px;
+    background-color: rgb(253, 211, 253);
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 0px  #575757;
+    margin-left: 50px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    border: 1px solid  rgb(255, 182, 255);
+    cursor: pointer;
+}
+.turn{
+    margin-top: 20px;
+}
+.info{
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    color: rgb(255, 0, 0);
+}
+.line{
+    background-color: rgb(1, 255, 1);
+    width: 0;
+    height: 1vw ;
+    border-radius: 10px;
+    position: absolute;
+    transition: width 1s ease-in-out;
+    /* transition: height .5s ease-in-out; */
+    /* transform:translate(10vw,15vw)  rotate(90deg); */
+}
+
+
+.copy{
+    background-color: #1b1b1b;
+    color: aliceblue;
+    padding: 10px 0px;
+    text-align: center;
+    margin-top: 20px;
+}
